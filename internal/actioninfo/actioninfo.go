@@ -17,13 +17,13 @@ func Info(dataset []string, dp DataParser) {
 
 		err := dp.Parse(data)
 		if err != nil {
-			fmt.Printf("Ошибка парсинга: %v\n", err)
+			fmt.Printf("parsing error: %v\n", err)
 			continue
 		}
 
 		info, err := dp.ActionInfo()
 		if err != nil {
-			fmt.Printf("Ошибка получения информации: %v\n", err)
+			fmt.Printf("info parsing error: %v\n", err)
 			continue
 		}
 
