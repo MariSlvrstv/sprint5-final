@@ -71,7 +71,7 @@ func (t Training) ActionInfo() (string, error) {
 		return "", fmt.Errorf("failed to calculate calories: %w", err)
 	}
 
-	info := fmt.Sprintf("Тип тренировки:%s \nДлительность: %.2f \nДистанция: %.2f км.\nСкорость: %.2f км/ч\nСожгли калорий: %.2f",
+	info := fmt.Sprintf("Тип тренировки:%s \nДлительность: %.2f ч. \nДистанция: %.2f км.\nСкорость: %.2f км/ч\nСожгли калорий: %.2f ккал.",
 		t.TrainingType,
 		t.Duration.Hours(),
 		distance,
